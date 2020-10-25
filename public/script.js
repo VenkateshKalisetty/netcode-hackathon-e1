@@ -1,20 +1,30 @@
 
 const getSquare = () => {
     const input = document.getElementById('value');
+    if (!input.value && input.value !== 0) {
+        setError(`Can't square this`);
+        return;
+    }
     const squareRoot = Math.pow(input.value, 2);
     if(Number.isFinite(squareRoot)) {
         input.value = squareRoot;
+        setError('');
     } else {
-        setError(`Can't square this`)
+        setError(`Can't square this`);
     }
 }
 
 const getFactorial = () => {
     const input = document.getElementById('value');
     const num = input.value;
-    if (num >= 0) {
+    if (num >= 0 && num !== '') {
         const value = factorial(num);
-        (Number.isFinite(value) && value !== -1) ? input.value = value : setError(`Can't get factorial`);
+        if (Number.isFinite(value) && value !== -1) {
+            input.value = value;
+            setError('');
+        } else {
+            setError(`Can't get factorial`)
+        };
     } else {
         setError(`Can't get factorial`);
     }

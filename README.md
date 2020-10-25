@@ -5,7 +5,7 @@
 #### Install the dependencies and start the server.
 ```sh
 $ cd netcode-hackthon-e1
-$ npm start
+$ npm run start
 ````
 - Server listening on *[`http://localhost:12345`](http://localhost:12345)*
 
