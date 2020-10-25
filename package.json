@@ -1,0 +1,15 @@
+{
+  "name": "wd_e1",
+  "version": "1.0.0",
+  "description": "Quick Maths",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dracarys",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

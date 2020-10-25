@@ -1,0 +1,40 @@
+fieldset{
+	width:600px;
+	border:2px solid #2370BC;
+}
+legend{
+	color: #2370BC;
+    font-size:18px;
+    text-transform: uppercase;
+}
+tr,td{
+	font-weight: normal;
+}
+
+input,textarea,select{
+    border: 1px solid #DDDDDD;
+    height: 1.5rem;
+    width: 100%;
+}
+tr td input:focus,textarea:focus,select:focus{
+	border: 0px solid #DDDDDD;
+	box-shadow: none;
+}
+
+.square, .factorial {
+    height: 30px;
+    width: 75px;
+    color: #DDDDDD;
+}
+
+.square {
+    background: red;
+}
+
+.factorial {
+    background: green;
+}
+
+#error {
+	display: none;
+}
