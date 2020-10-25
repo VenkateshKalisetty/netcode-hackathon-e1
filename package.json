@@ -4,7 +4,8 @@
   "description": "Quick Maths",
   "main": "start.js",
   "scripts": {
-    "start": "node start.js",
+    "start": "npm install && node start.js",
+    "start:dev": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dracarys",
